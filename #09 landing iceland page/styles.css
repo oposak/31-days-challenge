@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan&family=Yeseva+One&display=swap');
+
+/* font-family: 'Yeseva One', cursive;
+font-family: 'League Spartan', sans-serif; */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'League Spartan', sans-serif;
+}
+
+body {
+  height: 100vh;
+  width: 100%;
+  background-color: rgb(24, 25, 29);
+}
+
+::-webkit-scrollbar {
+  width: 0;
+  height: 100%;
+}
+
+header {
+  width: 100%;
+  height: 1325px;
+  background-image: url(photos/header.jpg);
+  background-size: 1950px;
+  position: relative;
+}
+
+header .nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .nav ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .nav ul li {
+  list-style: none;
+  text-decoration: none;
+  padding: 1.2em 1.4em;
+  text-transform: uppercase;
+  font-size: 17.5px;
+  font-weight: 500;
+  letter-spacing: 0.2px;
+}
+
+header .nav ul li a{
+  text-decoration: none;
+  color: rgb(121, 124, 128);
+}
+
+
+/*header .nav ul li a.active::before {
+  content: '';
+  position: absolute;
+  width: 50px;
+  height: 10px;
+}*/
+
+header .nav .logo {
+  font-family: 'Yeseva One', cursive;
+  color: rgb(116, 119, 126);
+  font-size: 22px;
+  padding-left: .5em;
+}
+
+header .iceland {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  padding-left: 8rem;
+  padding-top: 6rem;
+}
+
+header .iceland h1 {
+  font-family:'Yeseva One', cursive;
+  font-size: 10rem;
+  color: rgb(24, 25, 29);
+}
+
+header .iceland h3 {
+  font-size: 25px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: rgb(180, 182, 194);
+}
+
+@media (max-width: 1320px) {
+  .intro::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(#111015, rgb(24, 25, 29));
+    margin-top: -485px;
+    box-shadow: none;
+    filter: blur(9px);
+    z-index: 1;
+  }
+}
+
+.intro {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding-top: 4rem;
+  position: absolute;
+  z-index: 10000;
+  color: rgb(100, 103, 108);
+}
+.intro h1 {
+  font-family: 'Yeseva One', cursive;
+  font-size: 4rem;
+  color:rgb(180, 182, 194);
+}
+
+.intro h1 span {
+  font-family: 'League Spartan', sans-serif;
+  text-transform: uppercase;
+  font-size: 21px;
+  letter-spacing: 1.5px;
+  font-weight: 400;
+  color: rgb(100, 103, 108)
+}
+
+.intro .text {
+  font-size: 18px;
+  margin-bottom: 4rem;
+  width: 600;
+}
+
+.intro p {
+  padding-bottom: 2rem;
+  width: 100%;
+}
+
